@@ -18,6 +18,7 @@ jobs:
           node-version: 'latest'
 
       - run: |
+          yarn config set strict-ssl false -g
           yarn
           yarn dist
         shell: pwsh
