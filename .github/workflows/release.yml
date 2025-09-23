@@ -1,9 +1,7 @@
 name: release-build
 
 on:
-  push:
-    tags:
-      - v*.*.*
+ workflow_dispatch:
 
 jobs:
   release:
@@ -24,4 +22,4 @@ jobs:
           yarn release
         shell: pwsh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN:  ${{ secrets.access_token }}
