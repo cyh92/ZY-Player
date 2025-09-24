@@ -18,7 +18,7 @@ jobs:
           node-version: 16
 
       - run: |
-          NODE_TLS_REJECT_UNAUTHORIZED=0 npx update-browserslist-db@latest && yarn config set strict-ssl false && NODE_TLS_REJECT_UNAUTHORIZED=0 yarn && yarn dist
+          $env:NODE_TLS_REJECT_UNAUTHORIZED=0; npx update-browserslist-db@latest && yarn config set strict-ssl false && $env:NODE_TLS_REJECT_UNAUTHORIZED=0; yarn && yarn dist
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.access_token }}
