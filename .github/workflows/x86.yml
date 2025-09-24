@@ -18,7 +18,7 @@ jobs:
           node-version: 16
 
       - run: |
-          yarn config set strict-ssl false && yarn && yarn dist
+          npx update-browserslist-db@latest && yarn config set strict-ssl false && yarn && yarn dist
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.access_token }}
