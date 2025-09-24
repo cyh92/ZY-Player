@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 18
+          node-version: 16
 
       - run: |
           NODE_TLS_REJECT_UNAUTHORIZED=0 npx update-browserslist-db@latest && yarn config set strict-ssl false && NODE_TLS_REJECT_UNAUTHORIZED=0 yarn && yarn dist
