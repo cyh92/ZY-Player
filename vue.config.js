@@ -12,7 +12,8 @@ module.exports = {
         },
         appId: 'com.hunlongyu.zy',
         copyright: 'Copyright @ 2020 Hunlongyu',
-        productName: 'ZY Player',
+        productName: '筱筱影视',
+        artifactName: '${productName}-${version}.${ext}',
         publish: [
           {
             provider: 'github',
