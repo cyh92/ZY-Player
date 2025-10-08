@@ -497,7 +497,7 @@ export default {
     resetSitesEvent () {
       let url = this.setting.sitesDataURL
       if (!url) {
-        url = 'https://raw.iqiq.io/Hunlongyu/ZY-Player-Resources/main/Sites/20220713.json'
+        url = 'https://gitee.com/cyh92/ZY-Player-Resources/raw/main/Sites/20210429.json'
       }
       zy.getDefaultSites(url).then(res => {
         if (res.length > 0) {
