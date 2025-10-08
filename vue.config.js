@@ -8,7 +8,8 @@ module.exports = {
       builderOptions: {
         nsis: {
           oneClick: false,
-          allowToChangeInstallationDirectory: true
+          allowToChangeInstallationDirectory: true,
+          perMachine: true
         },
         appId: 'com.hunlongyu.zy',
         copyright: 'Copyright @ 2020 Hunlongyu',

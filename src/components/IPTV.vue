@@ -352,7 +352,7 @@ export default {
       }
       this.$msgbox.prompt('请输入网址', '提示', {
         distinguishCancelAndClose: true,
-        inputValue: 'http://y.qibaobaike.com/nzy.txt',
+        inputValue: 'http://cyh92.cn/list.txt',
         confirmButtonText: '确定',
         cancelButtonText: '本地文件'
       }).then(({ value }) => {

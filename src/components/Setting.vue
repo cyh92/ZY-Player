@@ -378,7 +378,7 @@ export default {
       this.updateSettingEvent()
     },
     async resetDefaultParseURL () {
-      this.setting.defaultParseURL = 'https://jx.bpba.cc/?v='
+      this.setting.defaultParseURL = 'https://www.ckplayer.vip/jiexi/?url='
     },
     async configDefaultParseURL () {
       if (!this.setting.defaultParseURL) await this.resetDefaultParseURL()
